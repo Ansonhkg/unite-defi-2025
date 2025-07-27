@@ -1,0 +1,21 @@
+{
+  "name": "unite-defi-2025",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "init": "bun run init:stellar && bun run init:ethereum",
+    "init:stellar": "bun run ./scripts/0-init-stellar.ts",
+    "init:ethereum": "bun run ./scripts/1-init-ethereum.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ethers": "5.7.2",
+    "stellar-sdk": "^13.3.0"
+  }
+}

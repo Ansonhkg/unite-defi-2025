@@ -1,5 +1,5 @@
-import * as StateManager from "../StateManager";
 import { ethers } from "ethers";
+import * as StateManager from "../utils/StateManager/StateManager";
 
 export async function getOrCreateAccount(): Promise<{
   privateKey: string;

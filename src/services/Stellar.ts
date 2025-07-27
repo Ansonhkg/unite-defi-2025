@@ -1,5 +1,5 @@
 import * as StellarSDK from "stellar-sdk";
-import * as StateManager from "../StateManager";
+import * as StateManager from "../utils/StateManager/StateManager";
 
 const HORIZON_URL = "https://horizon-testnet.stellar.org";
 
@@ -106,4 +106,4 @@ export async function checkBalance(keypair: {
   console.log("💰 Stellar Balance:", account.balances);
 }
 
-StellarSDK.Asset.native()
+StellarSDK.Asset.native();
